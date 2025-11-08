@@ -18,7 +18,7 @@
     </nav>
      <header class="hero">
     <h1>Future<br>Threads</h1>
-    <button class="buy-ticket">buy a ticket</button>
+    <button class="buy-ticket popup-button open-popup">buy a ticket</button>
   </header>
 
   <section class="intro">
@@ -75,5 +75,20 @@
   <section class="map">
     <img src="folder-img.folder/futurethreads_img/city-map-copenhagen-color-detailed-plan-vector-illustration-your-design-144678933 1.png" alt="Map to location" />
   </section>
+
+  <!-- Popup Window (single placeholder action + close) -->
+  <div class="popup-overlay" id="ticketPopup">
+    <div class="popup-content">
+      <button class="popup-close">&times;</button>
+      <div class="black-rectangle">
+        <h2>SUCCESS-<br>FULLY<br>PURCHASED</h2>
+      </div>
+      <div class="popup-buttons">
+        <button class="popup-action">OPEN TICKET</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="button.js"></script>
 </body>
 </html>
