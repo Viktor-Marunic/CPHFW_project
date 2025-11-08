@@ -23,7 +23,7 @@
             <div class="hero-white-box">
                 <img src="folder-img.folder/ticket_single_imgs/qr code.png" alt="QR Code" class="qr-img" />
             </div>
-            <button class="hero-button">Print ticket</button>
+            <button class="popup-button open-popup">Print ticket</button>
             <h1 class="hero-title">FUTURE THREADS</h1>
         </div>
     </section>
@@ -41,6 +41,22 @@
       <h4>price</h4>
       <p>700 DKK</p>
     </div>
-  </section>
+    </section>
+
+
+  <!-- Popup Window (single placeholder action + close) -->
+  <div class="popup-overlay" id="ticketPopup">
+    <div class="popup-content">
+      <button class="popup-close">&times;</button>
+      <div class="black-rectangle">
+        <h2>SUCCESS-<br>FULLY<br>PURCHASED</h2>
+      </div>
+      <div class="popup-buttons">
+        <button class="popup-action">OPEN TICKET</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="button.js"></script>
 </body>
 </html>
