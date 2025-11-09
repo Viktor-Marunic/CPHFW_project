@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Helvetica Neue Condensed';
+    src: url('fonts/HelveticaNeue-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Condensed';
+    src: url('fonts/HelveticaNeue-Condensed Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Condensed';
+    src: url('fonts/HelveticaNeue-Condensed Thin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem 2rem 1.5rem 3rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Helvetica Neue Condensed', sans-serif;
+    font-size: 34px;
+    margin: 0;
+    margin-right: 0rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 16rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links a:not(.logo) {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
