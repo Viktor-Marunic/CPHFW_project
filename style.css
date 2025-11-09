@@ -190,6 +190,8 @@
   padding: 0rem;
   scroll-snap-align: start;
   min-height: 310px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .card img {
