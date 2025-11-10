@@ -79,19 +79,17 @@
 }
 
 .hero-title {
-  position: absolute;
-  z-index: 2;
-  font-family: 'Helvetica Neue Condensed', sans-serif;
-  font-size: 250px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-  left: 0;
-  bottom: 0;
-  padding: 40px;
-  line-height: 0.8;  /* Reduces space between lines */
-  /* allow pointer events to pass through so big text doesn't block buttons */
-  pointer-events: none;
+    position: absolute;
+    z-index: 2;
+    font-family: 'Helvetica Neue Condensed', sans-serif;
+    font-size: 250px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    padding: 40px;
+    line-height: 0.8;  /* Reduces space between lines */
 }
 
 .white_space {
@@ -119,30 +117,30 @@
     max-height: 100%;
 }
 
-.popup-button {
-  position: absolute;
-  right: 50px;
-  bottom: 80px;
-  width: 290px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  font-family: 'Helvetica Neue Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  z-index: 999; /* ensure button sits above large title */
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.hero-button {
+    position: absolute;
+    right: 50px;
+    bottom: 80px;
+    width: 290px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-family: 'Helvetica Neue Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.popup-button:hover {
-    background: rgba(0, 0, 0, 0.2);
+.hero-button:hover {
+    background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
@@ -198,4 +196,3 @@
 .details li {
   margin-bottom: 8px;
 }
-

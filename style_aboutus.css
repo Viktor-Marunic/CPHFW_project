@@ -111,16 +111,6 @@
     text-align: center;
     margin: 0;
 }
-.hero-title2 {
-    position: relative;
-    z-index: 2;
-    font-family: 'Helvetica Neue Condensed', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin: 0;
-}
 
 .white_space {
     height: 150px;
@@ -310,52 +300,6 @@
     padding-top: 3px;
     text-align: center;
  }
- .events_text2{
-    color: #000;  
-    text-align: left;
-    font-family: 'Inter';
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-top: 60px;
-    text-align: right;
-    padding-left: 45%;
-    padding-right: 7%;
- }
- .events_text3{
-    color: #000;  
-    text-align: left;
-    font-family: 'Inter';
-    font-size: 27px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-top: 60px;
-    text-align: left;
-    padding-left: 7%;
-    padding-right: 45%;
- }
- .events_text4{
-  color: #000;
-  text-align: center;
-  font-family: Inter;
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding-top: 20px;
- }
- .events_text5{
-  color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 27px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-padding-top: 20px;
-}
 
  .STIEC{
   display: flex;
@@ -413,25 +357,4 @@ color: rgb(0, 0, 0);
  .p_heading{
   padding-left: 50px;
   padding-top: 25px;
- }
-
- .sustainability_section2 h4{
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 5%;
-  text-align: center;
- }
- .cards_team{
-  display: flex;
-  height: 557px;
-  justify-content: center;
-  align-items: center;
-  gap: 115px;
-  align-self: stretch;
- }
- .contact_us{
-  display: flex;
-width: 1444px;
-align-items: flex-start;
-gap: 50px;
  }
