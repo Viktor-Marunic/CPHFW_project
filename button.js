@@ -25,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 
-	// placeholder action button inside popup: does nothing (kept intentionally empty)
+	// placeholder action button inside popup: navigates to single_ticket.html
 	document.querySelectorAll('.popup-action').forEach(btn => {
 		btn.addEventListener('click', e => {
 			e.preventDefault();
-			console.log('Placeholder action clicked (no operation).');
+			window.location.href = 'single_ticket.html';
 		});
 	});
 
