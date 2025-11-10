@@ -10,15 +10,15 @@
     <nav class="nav_bar">
         <ul class="nav-links">
             <li><a href="" class="logo">CPHFW</a></li>
-            <li><a href="#">events</a></li>
+            <li><a href="events.html">events</a></li>
             <li><a href="#">brands</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">my profile</a></li>
+            <li><a href="about_us.html">about us</a></li>
+            <li><a href="sign_up.html">my profile</a></li>
         </ul>
     </nav>
      <header class="hero">
     <h1>Future<br>Threads</h1>
-    <button class="buy-ticket">buy a ticket</button>
+    <button class="buy-ticket popup-button open-popup">buy a ticket</button>
   </header>
 
   <section class="intro">
@@ -41,7 +41,7 @@
     </div>
     <div class="info-item">
       <h4>time</h4>
-      <p>February 4, 2026,<br>18.00 – 21.30</p>
+      <p>February 4, 2026,<br>18.00 - 21.30</p>
     </div>
     <div class="info-item">
       <h4>price</h4>
@@ -62,12 +62,12 @@
     <div class="schedule">
       <h4>Schedule</h4>
       <ul>
-        <li>18:00 – 18:45 – Guest arrival & welcome drinks</li>
-        <li>19:00 – Skall Studio – minimalist & sustainable</li>
-        <li>19:20 – Stine Goya – colorful & expressive</li>
-        <li>19:50 – GANNI – urban, cool, playful</li>
-        <li>20:15 – Mark Kenly Domino Tan – refined & sculptural</li>
-        <li>20:30 – 21:30 – Cocktail & networking hour</li>
+        <li>18:00 - 18:45 - Guest arrival & welcome drinks</li>
+        <li>19:00 - Skall Studio - minimalist & sustainable</li>
+        <li>19:20 - Stine Goya - colorful & expressive</li>
+        <li>19:50 - GANNI - urban, cool, playful</li>
+        <li>20:15 - Mark Kenly Domino Tan - refined & sculptural</li>
+        <li>20:30 - 21:30 - Cocktail & networking hour</li>
       </ul>
     </div>
   </section>
@@ -75,14 +75,20 @@
   <section class="map">
     <img src="folder-img.folder/futurethreads_img/city-map-copenhagen-color-detailed-plan-vector-illustration-your-design-144678933 1.png" alt="Map to location" />
   </section>
-   <section class="footer">
-        <ul class="footer-li">
-            <li>home</li>
-            <li>about</li>
-            <li>privacy policy</li>
-            <li>cookie policy</li>
-        </ul>
-        <h1 class="subtitle">CPHFW</h1>
-    </section>
+
+  <!-- Popup Window (single placeholder action + close) -->
+  <div class="popup-overlay" id="ticketPopup">
+    <div class="popup-content">
+      <button class="popup-close">&times;</button>
+      <div class="black-rectangle">
+        <h2>SUCCESS-<br>FULLY<br>PURCHASED</h2>
+      </div>
+      <div class="popup-buttons">
+        <button class="popup-action">OPEN TICKET</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="button.js"></script>
 </body>
 </html>

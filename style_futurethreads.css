@@ -87,10 +87,10 @@ h1 {
 
 .intro {
   max-width: 6000px;
-  margin: 20px auto 100px;
+  margin: 20px auto 60px;
   font-size: 18px;
   line-height: 1.6;
-  padding: 0 50px;
+  padding: 0 20px;
   text-align: left;
   margin-right: 40%;
 }
@@ -163,35 +163,125 @@ h1 {
     gap: 20px;
   }
 }
-.footer{
-    background-color: #202020;
-    height: 373px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2rem;
+/* Popup overlay styles */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  z-index: 1200;
+}
+.popup-overlay.active {
+  display: flex;
+}
+.popup-content {
+  position: relative; /* contain absolute close button */
+  background: #fff;
+  padding: 28px;
+  border-radius: 40px;
+  width: 820px;   /* requested fixed width */
+  height: 600px;  /* requested fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center; /* center children horizontally */
+  text-align: center;
 }
 
-.footer-li{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
-    margin-bottom: 2rem;
-    padding: 0;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
+.black-rectangle {
+  background-color: #000;
+  padding: 20px;
+  width: 783px; /* centered fixed width inside 820px popup (keeps padding room)
+                   responsive fallback provided by max-width */
+  height: 392px;
+  max-width: calc(100%); /* don't overflow popup inner width */
+  box-sizing: border-box;
+  margin: 0 auto 20px; /* center horizontally */
+  border-radius: 10px;
+  position: relative; /* contain the pseudo-element line */
+
+  /* line controls (can be overridden inline or in a media query) */
+  --line-width: 2px;      /* thickness of the vertical line */
+  --line-height: 300px;     /* height of the line (percentage of box height) */
+  --line-left: 90%;       /* horizontal position inside the box (percent) */
+  --line-top: 10%;        /* top offset for the line (percent) */
 }
 
-.subtitle {
-    font-family: 'Helvetica Neue Condensed', sans-serif;
-    font-size: 240px;
-    margin: 0;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+/* White vertical line inside the black box. Adjust the --line-* vars above */
+.black-rectangle::after {
+  content: "";
+  position: absolute;
+  left: var(--line-left);
+  top: var(--line-top);
+  transform: translateX(-50%);
+  width: var( --line-width);
+  height: var(--line-height);
+  background: #fff;
+  pointer-events: none;
+  border-radius: 4px;
 }
+
+.black-rectangle h2 {
+  color: white;
+  margin: 0;
+  font-family: 'Helvetica Neue Condensed', sans-serif;
+  font-size: 120px;
+  line-height: 110px;
+  text-align: left;
+  font-weight: bold;
+}
+.popup-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  z-index: 1300;
+  font-size: 50px;
+}
+
+.popup-buttons {
+  position: absolute;
+  bottom: 28px; /* matches popup padding */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.popup-action {
+  background: rgba(24, 24, 24, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(10, 10, 10, 0.2);
+  border-radius: 50px;
+  font-family: 'Helvetica Neue Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 30px;
+  width: 240px;
+  height: 70px;
+}
+
+.popup-action:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+

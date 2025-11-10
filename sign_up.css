@@ -154,7 +154,7 @@ body {
     height: 40px;
     background-color: #ffffff;
     color: #000000;
-    font-family: 'helvetica neue condensed', sans-serif;
+    font-family: 'inter', sans-serif;
     font-size: 12px;
     border: 0.5px solid #585858;
     border-radius: 4px;
@@ -162,8 +162,4 @@ body {
     transition: background-color 0.3s ease;
     font-weight: semi-bold;
     letter-spacing: 0.1px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
