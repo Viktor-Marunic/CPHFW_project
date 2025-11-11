@@ -87,7 +87,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     margin-top: 0;
-    padding-top: 80px; /* Account for fixed nav bar height */
+    padding-top: 80px;
 }
 
 .signup-box {

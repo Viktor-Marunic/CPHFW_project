@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	// helper: open a popup by id
+
 	const openPopup = id => {
 		const el = document.getElementById(id);
 		if (el) el.classList.add('active');

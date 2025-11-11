@@ -89,8 +89,7 @@
   left: 0;
   bottom: 0;
   padding: 40px;
-  line-height: 0.8;  /* Reduces space between lines */
-  /* allow pointer events to pass through so big text doesn't block buttons */
+  line-height: 0.8;
   pointer-events: none;
 }
 
@@ -107,8 +106,8 @@
     flex-shrink: 0;
     background: white;
     z-index: 2;
-    border-radius: 20px; /* Optional: rounded corners */
-    padding: 20px;     /* Optional: inner spacing */
+    border-radius: 20px;
+    padding: 20px;
 
 }
 
@@ -136,7 +135,7 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   cursor: pointer;
-  z-index: 999; /* ensure button sits above large title */
+  z-index: 999;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -19,6 +19,11 @@
     font-style: normal;
 }
 
+
+.time-label{
+  padding-left: 10px
+}
+
 * {
     margin: 0;
     padding: 0;
