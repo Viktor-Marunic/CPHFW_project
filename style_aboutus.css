@@ -468,3 +468,38 @@ padding-top: 75px;
     color: #ffffff;
     font-weight: bold;
 }
+.events_text--bottom-spacing {
+    padding-bottom: 80px;
+}
+
+.mission--right {
+    margin-left: auto;
+}
+
+.events_text--left-align {
+    text-align: left;
+}
+
+.spacer {
+    width: 100%;
+}
+
+.spacer--small {
+    height: 30px;
+}
+
+.spacer--large {
+    height: 60px;
+}
+
+.hero-title2--small {
+    font-size: 22px;
+}
+
+.section-heading--top-spacing {
+    padding-top: 10%;
+}
+
+.section-heading--centered {
+    text-align: center;
+}

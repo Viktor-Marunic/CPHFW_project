@@ -245,3 +245,6 @@
   font-size: 0.95rem;
   color: #666;
 }
+.user-name--bold {
+    font-weight: 700;
+}

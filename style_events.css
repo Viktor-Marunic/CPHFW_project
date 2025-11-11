@@ -334,3 +334,6 @@
  .sustainability_section{
   background-color: #f1f1f1f1;
  }
+.time-label--padded {
+    padding-left: 10px;
+}
