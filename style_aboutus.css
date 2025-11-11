@@ -432,6 +432,39 @@ color: rgb(0, 0, 0);
  .contact_us{
   display: flex;
 width: 1444px;
-align-items: flex-start;
+align-items: center;
 gap: 50px;
+padding-top: 75px;
  }
+.footer{
+    background-color: #202020;
+    height: 373px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.footer-li{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+.subtitle {
+    font-family: 'Helvetica Neue Condensed', sans-serif;
+    font-size: 240px;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
