@@ -285,12 +285,21 @@
     margin-bottom: 2rem;
     padding: 0;
     padding-top: 2rem;
-    text-decoration: underline;
     font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     justify-content: center;
+ }
 
+ .little_navigation-li li a {
+    text-decoration: underline;
+    color: #000000;
+    transition: color 0.3s ease;
+    cursor: pointer;
+ }
+
+ .little_navigation-li li a:hover {
+    color: #666666;
  }
 
  .history_text{
