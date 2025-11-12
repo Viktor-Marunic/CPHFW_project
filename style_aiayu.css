@@ -1,0 +1,306 @@
+.nav_bar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem 2rem 1.5rem 3rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Helvetica Neue Condensed', sans-serif;
+    font-size: 34px;
+    margin: 0;
+    margin-right: 0rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold; 
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 16rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links a:not(.logo) {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+/* ====== GENERAL ====== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+/* offset for fixed navbar */
+.aiayu-page {
+  padding-top: 87px; /* space below your fixed nav bar */
+}
+
+/* ====== HERO SECTION ====== */
+.aiayu-hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-title {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: #000;
+  font-family: "Helvetica Neue Condensed", sans-serif;
+  font-size: 250px;
+  font-weight: 700;
+  line-height: 250px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ====== INTRO SECTION ====== */
+.aiayu-intro {
+  width: 1125px;
+  margin: 4rem auto;
+}
+
+.intro-heading {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  width: 744px;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+/* ====== RUNWAY SECTION ====== */
+.aiayu-runway {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+}
+
+.runway-heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+  width: 100px;
+}
+
+.runway-gallery {
+  display: flex;
+  gap: 2rem;
+}
+
+.runway-gallery img {
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ====== DESIGNER SECTION ====== */
+.aiayu-designer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 6rem 2rem;
+}
+
+.designer-image img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+}
+
+.designer-text {
+  max-width: 600px;
+}
+
+.designer-heading {
+  font-family: "Helvetica Neue Condensed", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.designer-text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* ====== BUY TICKET BUTTON ====== */
+.buy-ticket-container {
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0; /* pushes it visually lower before footer */
+}
+
+.buy-ticket-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-ticket-btn:hover {
+  background-color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutus-title {
+  background-color: white;
+  padding: 30px;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.day-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 43px;
+  margin: 24px 0 12px 50px;
+  color: #000;
+}
+
+.day-title-strong {
+  font-weight: 600;
+}
+
+.day-title-regular {
+  font-weight: 400;
+}
+
+.about-us-card-container {
+  background-color: #ffffff;
+  padding: 0px 0 50px 0px;
+}
+
+.about-us-gallery {
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 20%;
+  padding: 7% 10% 7% 10%;
+}
+
+.about-us-gallery img {
+  height: 40%;
+  width: 40%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+}
+
+.card {
+  flex: 0 0 300px;
+  background: #ffffff;
+  padding: 0rem;
+  scroll-snap-align: start;
+  min-height: 310px;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.main-text-card {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  line-height: 1;
+  color: #333;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+.footer{
+    background-color: #202020;
+    height: 373px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.footer-li{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+.subtitle {
+    font-family: 'Helvetica Neue Condensed', sans-serif;
+    font-size: 240px;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
