@@ -246,3 +246,23 @@ svg {
     padding: 15px;
   }
 }
+.nostyle {
+  text-decoration: none;
+  color: black;
+}
+
+.nostyle:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.nostyle:active {
+  color: black;
+  text-decoration: none;
+}
+
+.nostyle:focus {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
