@@ -43,7 +43,7 @@
 .nav-links a:hover {
     color: #000000;
 }
-/* ====== GENERAL ====== */
+
 body {
   margin: 0;
   padding: 0;
@@ -52,12 +52,10 @@ body {
   background-color: #fff;
 }
 
-/* offset for fixed navbar */
 .aiayu-page {
-  padding-top: 87px; /* space below your fixed nav bar */
+  padding-top: 87px;
 }
 
-/* ====== HERO SECTION ====== */
 .aiayu-hero {
   position: relative;
   width: 100%;
@@ -82,7 +80,6 @@ body {
   margin: 0;
 }
 
-/* ====== INTRO SECTION ====== */
 .aiayu-intro {
   width: 1125px;
   margin: 4rem auto;
@@ -101,7 +98,6 @@ body {
   line-height: normal;
 }
 
-/* ====== RUNWAY SECTION ====== */
 .aiayu-runway {
   display: flex;
   align-items: flex-start;
@@ -129,7 +125,6 @@ body {
   object-fit: cover;
 }
 
-/* ====== DESIGNER SECTION ====== */
 .aiayu-designer {
   display: flex;
   justify-content: center;
@@ -161,11 +156,10 @@ body {
   line-height: 1.4;
 }
 
-/* ====== BUY TICKET BUTTON ====== */
 .buy-ticket-container {
   display: flex;
   justify-content: center;
-  margin: 8rem 0; /* pushes it visually lower before footer */
+  margin: 8rem 0;
 }
 
 .buy-ticket-btn {
